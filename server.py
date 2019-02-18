@@ -17,7 +17,7 @@ FIELDS = {'_id': False, 'promoter': True, 'enhancer': True, 'encode_no': True, '
 def index():
     return render_template("index.html")
 
-@app.route("/donorschoose/projects")
+@app.route("/motif_data/motif_kc")
 def donorschoose_projects():
     connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
     collection = connection[DBS_NAME][COLLECTION_NAME]
