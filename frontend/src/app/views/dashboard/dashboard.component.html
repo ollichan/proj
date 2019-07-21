@@ -1,0 +1,669 @@
+
+<div class="animated fadeIn">
+<div class="row">
+  
+  <div class="col-md-2">
+    <div class= "card" style="height:100vh">
+        <div style="padding:10%" >
+            <label for="select">Chromosome</label>
+            <select id="select" class="form-control form-control-lg mb-4"  [(ngModel)]="selectOption"  (change)="onChange()" >
+              <option>Choose </option>
+              <option *ngFor="let data of Chrlist;index as i"  [value]="data">{{data}}</option>
+              <option>chrX</option>
+              <option>chr2</option>
+              <option >chr7</option>
+              <option >chr8</option>
+              <option >chr10</option>
+              <option >chr3</option>
+              <option >chr4</option>
+        
+            </select>
+        
+         
+                <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <label for="name">Starting Postion</label>
+                        {{selectOptionStarting}}
+                        <input type="text" class="form-control"  placeholder="" id="starting"  [(ngModel)]="inputvalue1"  >
+                      </div>
+                    </div>
+                  </div><!--/.row-->
+                  <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="name">Ending Postion</label>     
+                          {{selectOptionEnding}}
+        
+                          <input type="text" class="form-control"  placeholder="" id="ending"  [(ngModel)]="inputvalue2" >
+                        </div>
+                      </div>
+                    </div><!--/.row-->
+                    <button class="btn btn-block btn-primary" type="button" (click)="reloadChartData()">Submit</button>
+          </div>
+    </div>
+
+
+  </div>
+
+<div class="col-md-10">
+    <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-5">
+              <h4 class="card-title mb-0">Binding Site Distribution</h4> {{message}}
+            </div>
+            <!--/.col-->
+            <div class="col-sm-7 d-none d-md-block">
+              <button type="button" class="btn btn-primary float-right" (click)="download()"><i class="icon-cloud-download"></i></button>
+              <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+                <!-- <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Day" id="option1">Day</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Month" id="option2">Month</label>
+                <label class="btn btn-outline-secondary" [(ngModel)]="radioModel" btnRadio="Year" id="option3">Year</label> -->
+              </div>
+            </div>
+            <!--/.col-->
+          </div>
+          <!--/.row-->
+          <div class="chart-wrapper" style="height:500px;margin-top:40px;">
+            <!-- <canvas baseChart class="chart"
+            [datasets]="mainChartData"
+            [labels]="mainChartLabels"
+            [options]="mainChartOptions"
+            [colors]="mainChartColours"
+            [legend]="mainChartLegend"
+            [chartType]="mainChartType"></canvas> -->
+            <div id="container">
+              <h4>Loading Data For Graph,Filter between range {{selectOptionEnding}} to {{selectOptionStarting}}</h4>
+              <!-- <button class="btn btn-small btn-primary" type="button" (click)="reloadChartData();">Reload Chart</button> -->
+    
+              <canvas id="canvasName" width="940px" height="250px" style="margin-left:auto; margin-right:auto"></canvas>
+            </div>
+    
+    
+          </div>
+        </div>
+      
+      </div>
+      <!--/.card-->
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              Motif Summary
+              <!-- <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button> -->
+    
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-info">
+                        <strong class="h4">Promoter</strong>
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+    
+    
+    
+                  <!--/.row-->
+                  <hr class="mt-0">
+    
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Chromosome</div>
+                      <div class="ml-auto font-weight-bold">{{promoterchrReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Starting Position</div>
+                      <div class="ml-auto font-weight-bold">{{promoterStarterReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Ending Position</div>
+                      <div class="ml-auto font-weight-bold">{{promoterEndReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Width</div>
+                      <div class="ml-auto font-weight-bold">{{promoterwidthReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>A</div>
+                      <div class="ml-auto font-weight-bold">[ {{promoterAStringReturn}} ] </div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>C</div>
+                      <!-- <div class="ml-auto font-weight-bold">{{promoterCReturn}}</div> -->
+                      <div class="ml-auto font-weight-bold">[ {{promoterCStringReturn}} ]</div>
+    
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>G</div>
+                      <!-- <div class="ml-auto font-weight-bold">{{promoterTReturn}}</div> -->
+                      <div class="ml-auto font-weight-bold">[ {{promoterGStringReturn}} ]</div>
+    
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>T</div>
+                      <!-- <div class="ml-auto font-weight-bold">{{promoterGReturn}}</div> -->
+                      <div class="ml-auto font-weight-bold">[ {{promoterTStringReturn}} ]</div>
+    
+                    </div>
+    
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-info">
+                        <strong class="h4">Position Weighted Matrix</strong>
+                      </div>
+                      <div class="col-sm-12 align-middle">
+                        <img style="padding-left:30%;width:80%" [src]="getReturnImage()">
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+    
+    
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-info">
+                        <strong class="h4">Nucleotide Distribution</strong>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="chart-wrapper">
+                          <canvas id="chart_Pie_1" baseChart class="chart" [data]="pieChartData" [labels]="pieChartLabels"
+                            [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+                            (chartClick)="updateChart()"></canvas>
+                        </div>
+                        <p>Click To update Chart</p>
+    
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                </div>
+                <!--/.col-->
+                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-warning">
+    
+                        <strong class="h4">Enhancer</strong>
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+                  <hr class="mt-0">
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Chromosome</div>
+                      <div class="ml-auto font-weight-bold">{{enhancerchrReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Starting Position</div>
+                      <div class="ml-auto font-weight-bold">{{enhancerStarterReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Ending Position</div>
+                      <div class="ml-auto font-weight-bold">{{enhancerEndReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>Width</div>
+                      <div class="ml-auto font-weight-bold">{{enhancerwidthReturn}}</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>A</div>
+                      <div class="ml-auto font-weight-bold">[ {{enhancerAStringReturn}} ]</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>C</div>
+                      <div class="ml-auto font-weight-bold">[ {{enhancerCStringReturn}} ]</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>G</div>
+                      <div class="ml-auto font-weight-bold">[ {{enhancerGStringReturn}} ]</div>
+                    </div>
+    
+                  </div>
+                  <div class="progress-group">
+                    <div class="progress-group-header">
+                      <div>T</div>
+                      <div class="ml-auto font-weight-bold">[ {{enhancerTStringReturn}} ]</div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-info">
+                        <strong class="h4">Position Weighted Matrix</strong>
+                      </div>
+                      <div class="col-sm-12 align-middle">
+                        <img style="padding-left:30%;width:80%" [src]="getReturnImageEnhancer()">
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="callout callout-info">
+                        <strong class="h4">Nucleotide Distribution</strong>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="chart-wrapper">
+                          <canvas baseChart class="chart" [data]="pieChartData2" [labels]="pieChartLabels"
+                            [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+                            (chartClick)="updateChart()"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+    
+                </div>
+                <!--/.col-->
+              </div>
+    
+    
+              <!--/.row-->
+              <br>
+    
+            </div>
+          </div>
+        </div>
+        <!--/.col-->
+    
+      
+        <!--/.col-->
+      </div>
+      <!--/.row-->
+    
+      <div class="row mb-4">
+        <div class="col-md-6 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              GOMO Analysis
+              <!-- <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button> -->
+    
+            </div>
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div>GO Term Identify</div>
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 col-md-8">
+    
+                      <div class="row">
+                        <ng-template #GOMO1>
+                          <p> GO_Term_Identifier : {{GOMODETAIL_FIELD0}} </p> <br>
+                          <p> Go_Name : 
+                          <p 
+                          [ngClass]="{
+                            'yellow' : checkGOMOtype(GOMODETAIL_FIELD1) == CC,
+                            'negative' : checkGOMOtype(GOMODETAIL_FIELD1) == BP,
+                            'positive': checkGOMOtype(GOMODETAIL_FIELD1) == MF,
+                            'blue': checkGOMOtype(GOMODETAIL_FIELD1)!= CC &&
+                            checkGOMOtype(GOMODETAIL_FIELD1)!= BP &&
+                            checkGOMOtype(GOMODETAIL_FIELD1)!= MF
+                          }"
+                          >  {{GOMODETAIL_FIELD1}} </p>
+                        <br>
+                          <p> Gene_ID: {{GOMODETAIL_FIELD2}} </p><br>
+                          <p> Gene_Rank : {{GOMODETAIL_FIELD3}} </p> <br>
+    
+                        </ng-template>
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[0]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[0]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[0]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[0])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[0])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[0])!= MF                
+                        }"
+    
+    
+                          [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(i)">
+                          {{GOTERMresult[0]}}
+                        </button>
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[1]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[1]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[1]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[1])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[1])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[1])!= MF                
+                        }"
+                          [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(1)">
+                          {{GOTERMresult[1]}}
+                        </button>
+    
+                        <button type="button" style="margin:3%"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[2]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[2]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[2]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[2])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[2])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[2])!= MF                
+                        }"
+                        class="btn btn-outline-secondary"
+                          [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(2)">
+                          {{GOTERMresult[2]}}
+                        </button>
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[3]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[3]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[3]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[3])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[3])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[3])!= MF                
+                        }"  
+                        
+                        [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(3)">
+                          {{GOTERMresult[3]}}
+                        </button>
+    
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[4]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[4]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[4]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[4])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[4])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[4])!= MF                
+                        }"
+                          [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(4)">
+                          {{GOTERMresult[4]}}
+                        </button>
+    
+    
+                        <br>
+                        <div style="margin-top:3%"></div>
+                        <br>
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[5]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[5]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[5]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[5])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[5])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[5])!= MF                
+                        }"
+                          [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(5)">
+                          {{GOTERMresult[5]}}
+                        </button>
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[6]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[6]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[6]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[6])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[6])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[6])!= MF                
+                        }"
+                        [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(6)">
+                          {{GOTERMresult[6]}}
+                        </button>
+    
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[7]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[7]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[7]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[7])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[7])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[7])!= MF                
+                        }" 
+                        [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(7)">
+                          {{GOTERMresult[7]}}
+                        </button>
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[8]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[8]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[8]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[8])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[8])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[8])!= MF                
+                        }"
+                        [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(8)">
+                          {{GOTERMresult[8]}}
+                        </button>
+    
+    
+                        <button type="button" style="margin:3%" class="btn btn-outline-secondary"
+                        [ngClass]="{
+                          'yellow' : checkGOMOtypeDetail(GOTERMresult[9]) == CC,
+                          'negative' : checkGOMOtypeDetail(GOTERMresult[9]) == BP,
+                          'positive': checkGOMOtypeDetail(GOTERMresult[9]) == MF,
+                          'blue': checkGOMOtypeDetail(GOTERMresult[9])!= CC &&
+                          checkGOMOtypeDetail(GOTERMresult[9])!= BP &&
+                          checkGOMOtypeDetail(GOTERMresult[9])!= MF                
+                        }"
+                        [popoverTitle]="Details" [ngbPopover]="GOMO1" (click)="FindGOMODetails(9)">
+                          {{GOTERMresult[9]}}
+                        </button>
+    
+                      </div>
+    
+    
+    
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+    
+                </div>
+                <!--/.col-->
+    
+              </div>
+              <!--/.row-->
+              <div class="row mb-4">
+                <div class="col-sm-12">
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                      
+                    GOMO Score
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 col-md-8 ml-auto font-weight-bold">
+                      {{GOMOSCOREresult}}
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+    
+                </div>
+                <!--/.col-->
+    
+              </div>
+              <!--/.row-->
+              <div class="row mb-4">
+                <div class="col-sm-12">
+                  <div class="row ">
+                    <div class="col-sm-4 col-md-4">
+                  p-value
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 col-md-8 ml-auto font-weight-bold">
+                      {{Presult}}
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+    
+                </div>
+                <!--/.col-->
+    
+              </div>
+              <!--/.row-->
+              <div class="row mb-4">
+                <div class="col-sm-12">
+                  <div class="row ">
+                    <div class="col-sm-4 col-md-4">
+                    q-value
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 col-md-8 ml-auto font-weight-bold">
+                      {{Qresult}}
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+    
+                </div>
+                <!--/.col-->
+    
+              </div>
+              <!--/.row-->
+              <br>
+    
+            </div>
+          </div>
+      
+        </div>
+    
+        <div class="col-md-6 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              PhyloP Analysis
+              <!-- <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button> -->
+    
+            </div>
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col-sm-12">
+                  <div class="row mb-4">
+                    <div class="col-sm-4">
+                      PhyloP Score
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 ml-auto font-weight-bold" 
+                    
+                    >
+                    <p [ngClass]="{
+                      'positive' : PhylopScore > 0,
+                      'negative' : PhylopScore < 0}">
+                      {{PhylopScore}}
+                    </p>
+                      
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <!--/.row-->
+                  <div class="row mb-4">
+                    <div class="col-sm-4">
+                      PhyloP Score Range
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 ml-auto font-weight-bold">
+                      {{PhylopScoreRange}}
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-sm-4">
+                      PhyloP Standard Deviation
+                    </div>
+                    <!--/.col-->
+                    <div class="col-sm-8 ml-auto font-weight-bold">
+                      {{PhylopSD}}
+                    </div>
+                    <!--/.col-->
+    
+                  </div>
+                </div>
+                <!--/.col-->
+    
+              </div>
+              <!--/.row-->
+    
+              <!--/.row-->
+    
+              <!--/.row-->
+    
+              <!--/.row-->
+              <br>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+
+
+
+</div>
+
+</div>
+
+</div>
