@@ -1,0 +1,1671 @@
+
+    [
+        {
+            "type": "CC",
+            "name": "intracellular"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular part"
+        },
+        {
+            "type": "CC",
+            "name": "organelle"
+        },
+        {
+            "type": "CC",
+            "name": "cytoplasm"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular organelle"
+        },
+        {
+            "type": "CC",
+            "name": "membrane-bounded organelle"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular membrane-bounded organelle"
+        },
+        {
+            "type": "MF",
+            "name": "protein binding"
+        },
+        {
+            "type": "MF",
+            "name": "transcription regulator activity"
+        },
+        {
+            "type": "MF",
+            "name": "binding"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of transcription"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of gene expression"
+        },
+        {
+            "type": "MF",
+            "name": "transcription factor activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of macromolecule biosynthetic process"
+        },
+        {
+            "type": "CC",
+            "name": "nucleus"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "sequence-specific DNA binding"
+        },
+        {
+            "type": "CC",
+            "name": "cytoplasmic part"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of primary metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of macromolecule metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of transcription, DNA-dependent"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of transcription from RNA polymerase II promoter"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular organelle lumen"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular organelle part"
+        },
+        {
+            "type": "BP",
+            "name": "anatomical structure morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "cellular metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process"
+        },
+        {
+            "type": "CC",
+            "name": "organelle part"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of nitrogen compound metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "transferase activity"
+        },
+        {
+            "type": "BP",
+            "name": "small GTPase mediated signal transduction"
+        },
+        {
+            "type": "BP",
+            "name": "organ morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "cellular component organization"
+        },
+        {
+            "type": "MF",
+            "name": "transferase activity, transferring phosphorus-containing groups"
+        },
+        {
+            "type": "CC",
+            "name": "nuclear part"
+        },
+        {
+            "type": "CC",
+            "name": "organelle lumen"
+        },
+        {
+            "type": "CC",
+            "name": "Golgi apparatus"
+        },
+        {
+            "type": "CC",
+            "name": "nuclear lumen"
+        },
+        {
+            "type": "CC",
+            "name": "nucleoplasm"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of signal transduction"
+        },
+        {
+            "type": "CC",
+            "name": "membrane-enclosed lumen"
+        },
+        {
+            "type": "BP",
+            "name": "cellular macromolecule metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "DNA binding"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell communication"
+        },
+        {
+            "type": "BP",
+            "name": "vesicle-mediated transport"
+        },
+        {
+            "type": "MF",
+            "name": "kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "organelle organization"
+        },
+        {
+            "type": "MF",
+            "name": "protein domain specific binding"
+        },
+        {
+            "type": "MF",
+            "name": "phosphotransferase activity, alcohol group as acceptor"
+        },
+        {
+            "type": "MF",
+            "name": "transcription activator activity"
+        },
+        {
+            "type": "BP",
+            "name": "protein modification process"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cellular process"
+        },
+        {
+            "type": "BP",
+            "name": "macromolecule modification"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of gene expression"
+        },
+        {
+            "type": "BP",
+            "name": "pattern specification process"
+        },
+        {
+            "type": "BP",
+            "name": "embryonic development"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of transcription"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of transcription, DNA-dependent"
+        },
+        {
+            "type": "BP",
+            "name": "cell development"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of gene expression"
+        },
+        {
+            "type": "BP",
+            "name": "post-translational protein modification"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of RNA metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "primary metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "transcription repressor activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of RNA metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "protein kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of macromolecule metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of transcription, DNA-dependent"
+        },
+        {
+            "type": "MF",
+            "name": "ribonucleotide binding"
+        },
+        {
+            "type": "MF",
+            "name": "purine ribonucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "nervous system development"
+        },
+        {
+            "type": "BP",
+            "name": "neurogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of transcription"
+        },
+        {
+            "type": "MF",
+            "name": "transcription factor binding"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of macromolecule metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "embryonic morphogenesis"
+        },
+        {
+            "type": "MF",
+            "name": "identical protein binding"
+        },
+        {
+            "type": "BP",
+            "name": "developmental process"
+        },
+        {
+            "type": "BP",
+            "name": "tube development"
+        },
+        {
+            "type": "BP",
+            "name": "generation of neurons"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cellular process"
+        },
+        {
+            "type": "MF",
+            "name": "nucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "Wnt receptor signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "cellular developmental process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell development"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of macromolecule biosynthetic process"
+        },
+        {
+            "type": "MF",
+            "name": "catalytic activity"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of nitrogen compound metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cellular metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of transcription from RNA polymerase II promoter"
+        },
+        {
+            "type": "MF",
+            "name": "protein serine/threonine kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "nucleic acid binding"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of biosynthetic process"
+        },
+        {
+            "type": "CC",
+            "name": "nucleoplasm part"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cellular metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "tissue morphogenesis"
+        },
+        {
+            "type": "MF",
+            "name": "SH3 domain binding"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of transcription from RNA polymerase II promoter"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of biological process"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "cellular protein metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regionalization"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of small GTPase mediated signal transduction"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of nitrogen compound metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "purine nucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "multicellular organismal development"
+        },
+        {
+            "type": "CC",
+            "name": "cell"
+        },
+        {
+            "type": "CC",
+            "name": "cell part"
+        },
+        {
+            "type": "MF",
+            "name": "GTPase activity"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of macromolecule biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cellular biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "macromolecule metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cellular biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "anatomical structure development"
+        },
+        {
+            "type": "BP",
+            "name": "morphogenesis of a branching structure"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of developmental process"
+        },
+        {
+            "type": "MF",
+            "name": "transcription cofactor activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of nervous system development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of Ras protein signal transduction"
+        },
+        {
+            "type": "MF",
+            "name": "enzyme binding"
+        },
+        {
+            "type": "BP",
+            "name": "endocytosis"
+        },
+        {
+            "type": "BP",
+            "name": "membrane invagination"
+        },
+        {
+            "type": "MF",
+            "name": "transcription corepressor activity"
+        },
+        {
+            "type": "MF",
+            "name": "protein dimerization activity"
+        },
+        {
+            "type": "CC",
+            "name": "transcription factor complex"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of ARF protein signal transduction"
+        },
+        {
+            "type": "BP",
+            "name": "localization"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of signal transduction"
+        },
+        {
+            "type": "MF",
+            "name": "adenyl ribonucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "system development"
+        },
+        {
+            "type": "CC",
+            "name": "endoplasmic reticulum"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of neurogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "cellular membrane organization"
+        },
+        {
+            "type": "BP",
+            "name": "neuron differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "urogenital system development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell cycle"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of RNA metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "enzyme activator activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of neuron differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of biological process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of transforming growth factor beta receptor signaling pathway"
+        },
+        {
+            "type": "CC",
+            "name": "protein complex"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell morphogenesis involved in differentiation"
+        },
+        {
+            "type": "CC",
+            "name": "nuclear chromatin"
+        },
+        {
+            "type": "BP",
+            "name": "protein amino acid phosphorylation"
+        },
+        {
+            "type": "BP",
+            "name": "anatomical structure formation involved in morphogenesis"
+        },
+        {
+            "type": "CC",
+            "name": "cytosol"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular component organization"
+        },
+        {
+            "type": "MF",
+            "name": "ATP binding"
+        },
+        {
+            "type": "MF",
+            "name": "GTPase activator activity"
+        },
+        {
+            "type": "BP",
+            "name": "establishment of localization"
+        },
+        {
+            "type": "MF",
+            "name": "small GTPase regulator activity"
+        },
+        {
+            "type": "BP",
+            "name": "gastrulation"
+        },
+        {
+            "type": "BP",
+            "name": "kidney development"
+        },
+        {
+            "type": "CC",
+            "name": "endomembrane system"
+        },
+        {
+            "type": "BP",
+            "name": "potassium ion transport"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of gene-specific transcription from RNA polymerase II promoter"
+        },
+        {
+            "type": "MF",
+            "name": "potassium channel activity"
+        },
+        {
+            "type": "CC",
+            "name": "mitochondrial part"
+        },
+        {
+            "type": "BP",
+            "name": "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "ARF GTPase activator activity"
+        },
+        {
+            "type": "MF",
+            "name": "protein kinase regulator activity"
+        },
+        {
+            "type": "MF",
+            "name": "magnesium ion binding"
+        },
+        {
+            "type": "BP",
+            "name": "establishment of localization in cell"
+        },
+        {
+            "type": "BP",
+            "name": "transport"
+        },
+        {
+            "type": "BP",
+            "name": "skeletal system morphogenesis"
+        },
+        {
+            "type": "MF",
+            "name": "protein kinase inhibitor activity"
+        },
+        {
+            "type": "BP",
+            "name": "organ development"
+        },
+        {
+            "type": "BP",
+            "name": "cellular localization"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell projection organization"
+        },
+        {
+            "type": "BP",
+            "name": "Golgi vesicle transport"
+        },
+        {
+            "type": "BP",
+            "name": "tube morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "intracellular transport"
+        },
+        {
+            "type": "BP",
+            "name": "stem cell development"
+        },
+        {
+            "type": "CC",
+            "name": "mitochondrion"
+        },
+        {
+            "type": "MF",
+            "name": "GTP binding"
+        },
+        {
+            "type": "MF",
+            "name": "potassium ion binding"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of ARF GTPase activity"
+        },
+        {
+            "type": "BP",
+            "name": "ensheathment of neurons"
+        },
+        {
+            "type": "BP",
+            "name": "axon ensheathment"
+        },
+        {
+            "type": "BP",
+            "name": "mitochondrion organization"
+        },
+        {
+            "type": "BP",
+            "name": "gland development"
+        },
+        {
+            "type": "BP",
+            "name": "enzyme linked receptor protein signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of neuron projection development"
+        },
+        {
+            "type": "MF",
+            "name": "adenyl nucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "branching morphogenesis of a tube"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cyclin-dependent protein kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "stem cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "chromatin modification"
+        },
+        {
+            "type": "BP",
+            "name": "phosphorus metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "phosphate metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of catalytic activity"
+        },
+        {
+            "type": "BP",
+            "name": "stem cell maintenance"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of molecular function"
+        },
+        {
+            "type": "BP",
+            "name": "actin cytoskeleton organization"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of molecular function"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell migration"
+        },
+        {
+            "type": "BP",
+            "name": "protein transport"
+        },
+        {
+            "type": "MF",
+            "name": "GTPase regulator activity"
+        },
+        {
+            "type": "BP",
+            "name": "respiratory tube development"
+        },
+        {
+            "type": "BP",
+            "name": "brain development"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of neuron apoptosis"
+        },
+        {
+            "type": "BP",
+            "name": "respiratory system development"
+        },
+        {
+            "type": "MF",
+            "name": "purine nucleoside binding"
+        },
+        {
+            "type": "MF",
+            "name": "nucleoside-triphosphatase regulator activity"
+        },
+        {
+            "type": "BP",
+            "name": "protein folding"
+        },
+        {
+            "type": "BP",
+            "name": "cell cycle"
+        },
+        {
+            "type": "CC",
+            "name": "coated vesicle"
+        },
+        {
+            "type": "BP",
+            "name": "morphogenesis of an epithelium"
+        },
+        {
+            "type": "BP",
+            "name": "epithelium development"
+        },
+        {
+            "type": "MF",
+            "name": "nucleoside binding"
+        },
+        {
+            "type": "MF",
+            "name": "intramolecular oxidoreductase activity"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cell communication"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cell development"
+        },
+        {
+            "type": "MF",
+            "name": "isomerase activity"
+        },
+        {
+            "type": "MF",
+            "name": "RNA polymerase II transcription factor activity, enhancer binding"
+        },
+        {
+            "type": "BP",
+            "name": "nitrogen compound metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "mesoderm development"
+        },
+        {
+            "type": "BP",
+            "name": "lung development"
+        },
+        {
+            "type": "CC",
+            "name": "extrinsic to membrane"
+        },
+        {
+            "type": "MF",
+            "name": "transmembrane receptor protein kinase activity"
+        },
+        {
+            "type": "MF",
+            "name": "protein homodimerization activity"
+        },
+        {
+            "type": "BP",
+            "name": "establishment of protein localization"
+        },
+        {
+            "type": "BP",
+            "name": "covalent chromatin modification"
+        },
+        {
+            "type": "CC",
+            "name": "cyclin-dependent protein kinase holoenzyme complex"
+        },
+        {
+            "type": "BP",
+            "name": "response to progesterone stimulus"
+        },
+        {
+            "type": "CC",
+            "name": "macromolecular complex"
+        },
+        {
+            "type": "MF",
+            "name": "cyclin-dependent protein kinase regulator activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of neuron apoptosis"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "forebrain development"
+        },
+        {
+            "type": "BP",
+            "name": "mesoderm morphogenesis"
+        },
+        {
+            "type": "CC",
+            "name": "Golgi apparatus part"
+        },
+        {
+            "type": "BP",
+            "name": "cellular biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "insulin receptor signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of GTPase activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of protein kinase B signaling cascade"
+        },
+        {
+            "type": "CC",
+            "name": "cell leading edge"
+        },
+        {
+            "type": "MF",
+            "name": "kinase inhibitor activity"
+        },
+        {
+            "type": "MF",
+            "name": "manganese ion binding"
+        },
+        {
+            "type": "BP",
+            "name": "actin filament-based process"
+        },
+        {
+            "type": "BP",
+            "name": "myelination"
+        },
+        {
+            "type": "BP",
+            "name": "transmembrane receptor protein tyrosine kinase signaling pathway"
+        },
+        {
+            "type": "MF",
+            "name": "guanyl nucleotide binding"
+        },
+        {
+            "type": "MF",
+            "name": "guanyl ribonucleotide binding"
+        },
+        {
+            "type": "BP",
+            "name": "protein complex assembly"
+        },
+        {
+            "type": "BP",
+            "name": "protein complex biogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cell projection organization"
+        },
+        {
+            "type": "BP",
+            "name": "formation of primary germ layer"
+        },
+        {
+            "type": "BP",
+            "name": "mitotic cell cycle"
+        },
+        {
+            "type": "BP",
+            "name": "cytoskeleton organization"
+        },
+        {
+            "type": "BP",
+            "name": "nucleoside phosphate metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "nucleotide metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of axonogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of protein kinase B signaling cascade"
+        },
+        {
+            "type": "CC",
+            "name": "organelle membrane"
+        },
+        {
+            "type": "MF",
+            "name": "cytoskeletal protein binding"
+        },
+        {
+            "type": "BP",
+            "name": "central nervous system development"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of Wnt receptor signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular component biogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "mesoderm formation"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of catalytic activity"
+        },
+        {
+            "type": "CC",
+            "name": "chromatin remodeling complex"
+        },
+        {
+            "type": "BP",
+            "name": "intracellular signaling pathway"
+        },
+        {
+            "type": "CC",
+            "name": "actin filament"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of Ras GTPase activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular component movement"
+        },
+        {
+            "type": "BP",
+            "name": "'de novo' protein folding"
+        },
+        {
+            "type": "BP",
+            "name": "Ras protein signal transduction"
+        },
+        {
+            "type": "BP",
+            "name": "embryonic organ development"
+        },
+        {
+            "type": "CC",
+            "name": "actomyosin"
+        },
+        {
+            "type": "MF",
+            "name": "Rho GTPase activator activity"
+        },
+        {
+            "type": "CC",
+            "name": "clathrin-coated vesicle"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of developmental process"
+        },
+        {
+            "type": "BP",
+            "name": "macromolecule localization"
+        },
+        {
+            "type": "MF",
+            "name": "galactosylceramide sulfotransferase activity"
+        },
+        {
+            "type": "MF",
+            "name": "galactose 3-O-sulfotransferase activity"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of gene-specific transcription from RNA polymerase II promoter"
+        },
+        {
+            "type": "CC",
+            "name": "endoplasmic reticulum part"
+        },
+        {
+            "type": "BP",
+            "name": "anterior/posterior pattern formation"
+        },
+        {
+            "type": "BP",
+            "name": "tissue development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of gene expression, epigenetic"
+        },
+        {
+            "type": "CC",
+            "name": "endoplasmic reticulum lumen"
+        },
+        {
+            "type": "MF",
+            "name": "Ras GTPase activator activity"
+        },
+        {
+            "type": "BP",
+            "name": "neuron development"
+        },
+        {
+            "type": "BP",
+            "name": "cellular macromolecule catabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "protein localization"
+        },
+        {
+            "type": "BP",
+            "name": "histone modification"
+        },
+        {
+            "type": "MF",
+            "name": "AMP binding"
+        },
+        {
+            "type": "MF",
+            "name": "insulin receptor binding"
+        },
+        {
+            "type": "BP",
+            "name": "programmed cell death"
+        },
+        {
+            "type": "BP",
+            "name": "ear development"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of axonogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of anatomical structure morphogenesis"
+        },
+        {
+            "type": "CC",
+            "name": "mitochondrial envelope"
+        },
+        {
+            "type": "BP",
+            "name": "pallium development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of protein kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "death"
+        },
+        {
+            "type": "MF",
+            "name": "protein serine/threonine kinase inhibitor activity"
+        },
+        {
+            "type": "BP",
+            "name": "interspecies interaction between organisms"
+        },
+        {
+            "type": "BP",
+            "name": "response to vitamin E"
+        },
+        {
+            "type": "MF",
+            "name": "receptor signaling protein serine/threonine kinase activity"
+        },
+        {
+            "type": "MF",
+            "name": "O-fucosylpeptide 3-beta-N-acetylglucosaminyltransferase activity"
+        },
+        {
+            "type": "MF",
+            "name": "DNA-methyltransferase activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of lipid transport"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of cell migration"
+        },
+        {
+            "type": "BP",
+            "name": "neuron projection morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "glucose metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "axonogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "heart development"
+        },
+        {
+            "type": "BP",
+            "name": "mitochondrial genome maintenance"
+        },
+        {
+            "type": "MF",
+            "name": "protein heterodimerization activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cell-matrix adhesion"
+        },
+        {
+            "type": "BP",
+            "name": "telencephalon development"
+        },
+        {
+            "type": "MF",
+            "name": "transmembrane receptor protein tyrosine kinase activity"
+        },
+        {
+            "type": "CC",
+            "name": "histone deacetylase complex"
+        },
+        {
+            "type": "BP",
+            "name": "monosaccharide metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "cellular response to stimulus"
+        },
+        {
+            "type": "BP",
+            "name": "carbohydrate metabolic process"
+        },
+        {
+            "type": "CC",
+            "name": "nucleolus"
+        },
+        {
+            "type": "BP",
+            "name": "chordate embryonic development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of biological process"
+        },
+        {
+            "type": "BP",
+            "name": "response to estradiol stimulus"
+        },
+        {
+            "type": "BP",
+            "name": "'de novo' posttranslational protein folding"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of axon extension"
+        },
+        {
+            "type": "CC",
+            "name": "actin filament bundle"
+        },
+        {
+            "type": "BP",
+            "name": "neutral amino acid transport"
+        },
+        {
+            "type": "CC",
+            "name": "non-membrane-bounded organelle"
+        },
+        {
+            "type": "CC",
+            "name": "intracellular non-membrane-bounded organelle"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of cellular catabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "peptide antigen binding"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of phosphate metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of phosphorus metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "kinase regulator activity"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of membrane potential"
+        },
+        {
+            "type": "MF",
+            "name": "ligase activity, forming carbon-nitrogen bonds"
+        },
+        {
+            "type": "BP",
+            "name": "vasculature development"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of Wnt receptor signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "cell death"
+        },
+        {
+            "type": "BP",
+            "name": "nucleobase, nucleoside and nucleotide metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "gland morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of phosphorylation"
+        },
+        {
+            "type": "BP",
+            "name": "hexose metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of erythrocyte differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "transcription, DNA-dependent"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of Notch signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "trophectodermal cell differentiation"
+        },
+        {
+            "type": "BP",
+            "name": "negative regulation of kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "Golgi to endosome transport"
+        },
+        {
+            "type": "MF",
+            "name": "calmodulin binding"
+        },
+        {
+            "type": "BP",
+            "name": "lipid biosynthetic process"
+        },
+        {
+            "type": "CC",
+            "name": "dendrite"
+        },
+        {
+            "type": "BP",
+            "name": "phosphorylation"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of insulin receptor signaling pathway"
+        },
+        {
+            "type": "BP",
+            "name": "somatic motor neuron differentiation"
+        },
+        {
+            "type": "MF",
+            "name": "RNA polymerase II transcription factor activity"
+        },
+        {
+            "type": "BP",
+            "name": "apoptosis"
+        },
+        {
+            "type": "BP",
+            "name": "neuron projection development"
+        },
+        {
+            "type": "BP",
+            "name": "spleen development"
+        },
+        {
+            "type": "BP",
+            "name": "axon guidance"
+        },
+        {
+            "type": "BP",
+            "name": "sphingoid biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "cell morphogenesis involved in neuron differentiation"
+        },
+        {
+            "type": "MF",
+            "name": "inorganic cation transmembrane transporter activity"
+        },
+        {
+            "type": "BP",
+            "name": "lung alveolus development"
+        },
+        {
+            "type": "MF",
+            "name": "protein phosphorylated amino acid binding"
+        },
+        {
+            "type": "BP",
+            "name": "embryonic development ending in birth or egg hatching"
+        },
+        {
+            "type": "CC",
+            "name": "NuRD complex"
+        },
+        {
+            "type": "BP",
+            "name": "Rho protein signal transduction"
+        },
+        {
+            "type": "MF",
+            "name": "acid-amino acid ligase activity"
+        },
+        {
+            "type": "BP",
+            "name": "cell projection morphogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "gastrulation with mouth forming second"
+        },
+        {
+            "type": "BP",
+            "name": "blastocyst formation"
+        },
+        {
+            "type": "BP",
+            "name": "cell fate commitment"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of neurogenesis"
+        },
+        {
+            "type": "BP",
+            "name": "compartment pattern formation"
+        },
+        {
+            "type": "BP",
+            "name": "cellular carbohydrate catabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "Wnt receptor signaling pathway, calcium modulating pathway"
+        },
+        {
+            "type": "MF",
+            "name": "nucleoside kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "neuron fate commitment"
+        },
+        {
+            "type": "BP",
+            "name": "cellular carbohydrate metabolic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of transferase activity"
+        },
+        {
+            "type": "BP",
+            "name": "exocrine system development"
+        },
+        {
+            "type": "MF",
+            "name": "Notch binding"
+        },
+        {
+            "type": "BP",
+            "name": "protein metabolic process"
+        },
+        {
+            "type": "MF",
+            "name": "phosphoprotein binding"
+        },
+        {
+            "type": "BP",
+            "name": "RNA biosynthetic process"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of generation of precursor metabolites and energy"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of axon extension"
+        },
+        {
+            "type": "BP",
+            "name": "regulation of synaptic plasticity"
+        },
+        {
+            "type": "MF",
+            "name": "metal ion binding"
+        },
+        {
+            "type": "BP",
+            "name": "cell morphogenesis"
+        },
+        {
+            "type": "CC",
+            "name": "voltage-gated potassium channel complex"
+        },
+        {
+            "type": "CC",
+            "name": "potassium channel complex"
+        },
+        {
+            "type": "BP",
+            "name": "positive regulation of cyclin-dependent protein kinase activity"
+        },
+        {
+            "type": "BP",
+            "name": "cell division"
+        },
+        {
+            "type": "BP",
+            "name": "cell projection organization"
+        },
+        {
+            "type": "BP",
+            "name": "epithelial tube morphogenesis"
+        },
+        {
+            "type": "MF",
+            "name": "voltage-gated potassium channel activity"
+        },
+        {
+            "type": "MF",
+            "name": "DNA (cytosine-5-)-methyltransferase activity"
+        },
+        {
+            "type": "CC",
+            "name": "endosome"
+        },
+        {
+            "type": "CC",
+            "name": "PcG protein complex"
+        },
+        {
+            "type": "MF",
+            "name": "phosphatase binding"
+        }
+    ]
