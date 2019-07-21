@@ -1,0 +1,34 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+
+.positive{
+    color:green;
+    font-weight: 500;
+
+}
+
+.negative{
+    color:red;
+    font-weight: 500;
+
+}
+
+.yellow{
+    color:darkgoldenrod;
+    font-weight: 500;
+}
+
+.blue{
+    color:blue;
+    font-weight: 500;
+
+}
+
+body { font-size: 150%; }
